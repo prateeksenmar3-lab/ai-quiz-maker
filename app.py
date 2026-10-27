@@ -35,7 +35,7 @@ PDF CONTENT:
 {text[:25000]}
 """
     response = client.models.generate_content(
-        model="gemini-3.8-flash", contents=prompt
+        model="gemini-3.5-flash", contents=prompt
     )
     result = re.sub(r"^```(?:json)?\s*|\s*```$", "",
                     response.text.strip())
